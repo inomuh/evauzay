@@ -1,0 +1,12 @@
+<launch>
+	<arg name="ns" default="/"/> 
+	<group ns="$(arg ns)">
+		<include file="$(find evarobot_eio)/launch/evarobot_rgb.launch" />
+	        <include file="$(find evarobot_eio)/launch/evarobot_eio.launch" />
+		<include file="$(find evarobot_battery)/launch/evarobot_battery.launch" />
+		<include file="$(find evarobot_driver)/launch/driver.launch" />		
+		<include file="$(find evarobot_pozyx)/launch/evarobot_pozyx.launch" />
+		<include file="$(find evarobot_sonar)/launch/evarobot_sonar.launch" />
+		<include file="$(find evarobot_vel)/launch/evarobot_vel.launch" />
+	</group>
+</launch>

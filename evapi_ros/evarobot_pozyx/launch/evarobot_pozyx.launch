@@ -1,0 +1,9 @@
+<launch>
+	<master auto="start"/>
+	
+	<!-- Run evarobot_pozyx -->
+	<node pkg="evarobot_pozyx" type="evarobot_pozyx" respawn="false" name="evarobot_pozyx" />
+<!--		<rosparam file="$(find evarobot_controller)/params/evarobot_controller_params.yaml" command="load"/> 
+	</node> -->
+	
+</launch>

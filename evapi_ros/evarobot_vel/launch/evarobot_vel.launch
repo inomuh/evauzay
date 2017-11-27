@@ -1,0 +1,10 @@
+<launch>
+        <master auto="start"/>
+
+        <!-- Run evarobot_vel -->
+        <node pkg="evarobot_vel" type="evarobot_vel" respawn="false" name="evarobot_vel" >
+                <rosparam file="$(find evarobot_vel)/params/evarobot_vel_params.yaml" command="load"/>
+		</node>
+</launch>
+
+
